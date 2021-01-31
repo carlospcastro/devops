@@ -66,6 +66,10 @@ terraform plan
 # To apply the changes
 terraform apply
 ```
+## Connect to Kubernetes
+```bash
+az aks get-credentials -n aks-test01 -g aks-test01
+```
 
 ## Clean up
 
