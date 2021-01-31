@@ -36,7 +36,6 @@ az account set --subscription <id>
 Kubernetes needs a service principal to manage the AKS cluster and other Azure resources
 
 ```bash
-SERVICE_PRINCIPAL_JSON=$(
 # Create Service Principal
 az ad sp create-for-rbac --skip-assignment --name sp-test01 -o json
 
