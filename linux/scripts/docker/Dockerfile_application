@@ -1,0 +1,18 @@
+FROM carlos:centos7
+ENV JAVA_HOME /app/oracle/java8/bin/java
+ENV HOME_DIR /app/application/api
+ENV APP_PROFILE qa
+USER midd
+EXPOSE 8080
+ADD carlos_java8.tar.gz /app/oracle
+ENV PATH "$PATH":/${JAVA_HOME}/bin:.:
+ENV LOG_PATH /app/application/api/config/domain
+
+WORKDIR /app/application/api
+ADD application.api.war /app/application/api
+#COPY config/domain/config.properties /app/application/api/config/domain/
+ADD config/domain/config.properties /app/application/api/config/domain/
+ADD config/api/config.properties /app/application/api/config/api/
+ADD config/domain/logback.xml /app/application/api/config/domain/
+
+ENTRYPOINT  ["sh", "-c", "$JAVA_HOME -jar -Dlogging.config=$LOG_PATH/logback.xml -Duser.timezone=America/Sao_Paulo -Dserver.port=8080 -Dspring.profiles.active=$APP_PROFILE -Dconfig.dir=$HOME_DIR/config application.api.war -Xms512m -Xmx512m"]
