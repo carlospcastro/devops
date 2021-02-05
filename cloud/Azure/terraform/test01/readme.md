@@ -24,10 +24,10 @@ Pre requirements to get started with AKS using Terraform.
 # To login to Azure
 az login 
 
-# To find you subscription
+# To find your subscription
 az account list -o table
 
-# To set properly you desired susbcription
+# To set properly your desired subscription
 az account set --subscription <id>
 ```
 
