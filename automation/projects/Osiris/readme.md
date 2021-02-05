@@ -1,4 +1,4 @@
-### **Horus Project** 
+### **Osiris Project** 
 
 Install the following stack in a automated way
 
@@ -6,9 +6,10 @@ Install the following stack in a automated way
 * Grafana
 * MariaDB
 * Java Spring Boot Application
+* Rundeck ???
 
 ## Environment
-* Azure
+* AWS
 
 ## Tools
 * Ansible
