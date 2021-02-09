@@ -1,7 +1,7 @@
-service_principal_id: 7a5d81a8-3a4d-4ec2-aaa1-31fdb883146d
-service_principal_key: j.w.TX-C2a2gwRj~EnwcuSKtjnp~xLBj-c
-tenant_id: 7455997d-60c8-4c9b-b9be-728a1f667d7a
+service_principal_id: 
+service_principal_key: 
+tenant_id: 
 azure_dns_domain: carlospcastro.com
 azure_resource_group: externaldns
-azure_subscription: 36021fe5-f7c5-40a2-806c-d934dd026e87
-owner_id: isis
+azure_subscription: 
+owner_id: isis-project
