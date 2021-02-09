@@ -1,0 +1,6 @@
+export TF_VAR_service_principal_id="7a5d81a8-3a4d-4ec2-aaa1-31fdb883146d"
+export TF_VAR_service_principal_key="j.w.TX-C2a2gwRj~EnwcuSKtjnp~xLBj-c"
+export TF_VAR_tenant_id="7455997d-60c8-4c9b-b9be-728a1f667d7a"
+export TF_VAR_subscription_id="36021fe5-f7c5-40a2-806c-d934dd026e87"
+export TF_VAR_ssh_key="`cat ~/.ssh/id_rsa.pub`"
+export TF_VAR_environment="isis"
