@@ -1,0 +1,7 @@
+service_principal_id: 
+service_principal_key: 
+tenant_id: 
+azure_dns_domain: carlospcastro.com
+azure_resource_group: externaldns
+azure_subscription: 
+owner_id: isis-project

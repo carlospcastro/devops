@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: grafana
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    external-dns.alpha.kubernetes.io/target: {{ .Values.host }}
+spec:
+  rules:
+  - host: {{ .Values.host }}
+    http:
+      paths:
+      - backend:
+          serviceName: grafana-internal
+          servicePort: 3000
+        path: /

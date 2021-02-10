@@ -17,7 +17,7 @@ git clone https://github.com/carlospcastro/devops.git
 cd devops/cloud/Azure/terraform/test02/
 ```
 
-## **Azure login**
+## Azure login
 
 ```bash
 # To login to Azure
@@ -30,7 +30,7 @@ az account list -o table
 az account set --subscription <id>
 ```
 
-## **Environment variable**
+## Environment variable
 
 You can setup env variables via command line or pass the values through the terraform command line `terraform -var`
 
@@ -40,7 +40,7 @@ Fill out the env_vars.sh with your values and then run the command below
 source env_vars.sh
 ```
 
-## **Terraform**
+## Terraform
 
 ```bash
 # Run terraform
@@ -51,15 +51,15 @@ terraform plan
 terraform apply
 ```
 
-## **Resources created**
+## Resources created
 
 ![https://carlospcastro.com/wp-content/uploads/2021/02/Screenshot-2021-02-05-at-19.48.51-1024x454.png](https://carlospcastro.com/wp-content/uploads/2021/02/Screenshot-2021-02-05-at-19.48.51-1024x454.png)
 
-## **Login to machine**
+## Login to machine
 
 ![https://carlospcastro.com/wp-content/uploads/2021/02/Screenshot-2021-02-05-at-20.18.32.png](https://carlospcastro.com/wp-content/uploads/2021/02/Screenshot-2021-02-05-at-20.18.32.png)
 
-## **Clean up**
+## Clean up
 
 ```bash
 # Run terraform to destroy everything

@@ -12,3 +12,6 @@ variable "kubernetes_version" {
 
 variable "ssh_key" {
 }
+
+variable "environment" {
+}

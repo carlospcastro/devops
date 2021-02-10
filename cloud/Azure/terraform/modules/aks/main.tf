@@ -1,13 +1,13 @@
 resource "azurerm_resource_group" "aks-test01" {
-  name     = "aks-test01"
+  name     = var.environment
   location = var.location
 }
 
 resource "azurerm_kubernetes_cluster" "aks-test01" {
-  name                  = "aks-test01"
+  name                  = azurerm_resource_group.aks-test01.name
   location              = azurerm_resource_group.aks-test01.location
   resource_group_name   = azurerm_resource_group.aks-test01.name
-  dns_prefix            = "aks-test01"            
+  dns_prefix            = azurerm_resource_group.aks-test01.name            
   kubernetes_version    =  var.kubernetes_version
   
   default_node_pool {
