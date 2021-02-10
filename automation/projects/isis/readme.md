@@ -13,6 +13,8 @@ Install the following stack in a automated way
 * Kubernetes
 * Helm
 
+First of, we need to create our K8S cluster and to do that you can find the step by step in another post that I made:
+
 [Azure Kubernetes with Terraform](https://carlospcastro.com/2021/01/31/azure-kubernetes-with-terraform/)
 
 After create the AKS we gonna start installing the applications using Helm. To install Helm, it will depends on your local system and how you are used to install tools, please check this link below:
