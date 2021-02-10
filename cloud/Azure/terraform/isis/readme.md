@@ -37,7 +37,7 @@ Kubernetes needs a service principal to manage the AKS cluster and other Azure r
 
 ```bash
 # Create Service Principal
-az ad sp create-for-rbac --skip-assignment --name sp-test01 -o json
+az ad sp create-for-rbac --skip-assignment --name sp-isis -o json
 
 # Grant access to service principal perform changes in the subscription
 az role assignment create --assignee <appId> \
@@ -67,7 +67,7 @@ terraform apply
 ```
 ## Connect to Kubernetes
 ```bash
-az aks get-credentials -n aks-test01 -g aks-test01
+az aks get-credentials -n isis -g isis
 ```
 
 ## Clean up
